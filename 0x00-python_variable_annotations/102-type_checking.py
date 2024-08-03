@@ -5,6 +5,11 @@ from typing import Tuple, List
 
 
 def zoom_array(lst: Tuple, factor: int = 2) -> List:
+    """ repeat item in tuple with respect to the factor
+
+    input: array = (12, 72, 91), factor = 2
+    output: [12, 12, 72, 72, 91, 91]
+    """
     zoomed_in: List = [
         item for item in lst
         for i in range(factor)
