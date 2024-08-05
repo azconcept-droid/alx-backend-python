@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """ Basic aync module
 """
-from random import uniform
+import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
@@ -11,4 +11,4 @@ async def wait_random(max_delay: int = 10) -> float:
     (included and float value) seconds and eventually returns it
     """
 
-    return uniform(0, max_delay)
+    return random.uniform(0, max_delay)
